@@ -1,13 +1,6 @@
-Aspera client
-=============
-
-Aspera client. `ascp` is set as the entrypoint.
-
-Build:
-
-    docker build -t aspera-client
+IDR Download
+============
 
 Run:
 
-    docker run --rm -v /data:/data aspera-client -T -Q -l 1000M /data/src \
-        user@aspera.example.org:dest
+    docker run --rm -v /data:/data imagedata/download idr0001 md5sum.txt /data/idr0001/
