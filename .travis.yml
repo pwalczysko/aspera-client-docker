@@ -3,3 +3,4 @@ services:
   - docker
 script:
     - docker build -t aspera-client .
+    - docker run --rm aspera-client idr0001 md5sum.txt /tmp/idr0001/
