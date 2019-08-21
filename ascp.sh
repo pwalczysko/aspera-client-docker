@@ -12,11 +12,11 @@ echo /home/data/.aspera/connect/bin/ascp \
     -l "$ASCP_LIMIT" \
     -i "$ASCP_KEY" \
     "$@" \
-    $STUDY@$ASCP_SERVER:$SOURCE $TARGET
+    "$STUDY@$ASCP_SERVER:$SOURCE" "$TARGET"
 
 /home/data/.aspera/connect/bin/ascp \
     -P$ASCP_PORT \
     -l "$ASCP_LIMIT" \
     -i "$ASCP_KEY" \
     "$@" \
-    $STUDY@$ASCP_SERVER:$SOURCE $TARGET
+    "$STUDY@$ASCP_SERVER:$SOURCE" "$TARGET"
