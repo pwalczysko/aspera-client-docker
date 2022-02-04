@@ -11,6 +11,7 @@ echo /home/data/.aspera/connect/bin/ascp \
     -P$ASCP_PORT \
     -l "$ASCP_LIMIT" \
     -i "$ASCP_KEY" \
+    -k "$ASCP_RETRANSFER_FILE" \
     "$@" \
     "$STUDY@$ASCP_SERVER:$SOURCE" "$TARGET"
 
@@ -18,5 +19,6 @@ echo /home/data/.aspera/connect/bin/ascp \
     -P$ASCP_PORT \
     -l "$ASCP_LIMIT" \
     -i "$ASCP_KEY" \
+    -k "$ASCP_RETRANSFER_FILE" \
     "$@" \
     "$STUDY@$ASCP_SERVER:$SOURCE" "$TARGET"
