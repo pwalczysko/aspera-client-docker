@@ -19,6 +19,7 @@ ENV ASCP_KEY /home/data/.aspera/connect/etc/asperaweb_id_dsa.openssh
 ENV ASCP_LIMIT 40m
 ENV ASCP_RETRANSFER_FILE 0
 ENV ASCP_PORT 33001
+ENV ASCP_USER fasp-public
 ENV ASCP_SERVER fasp.ebi.ac.uk
 ADD ascp.sh /usr/local/bin/ascp.sh
 ENTRYPOINT ["/usr/local/bin/ascp.sh"]

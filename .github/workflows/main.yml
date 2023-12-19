@@ -15,7 +15,7 @@ jobs:
       - name: Build
         run: docker build -t aspera-client .
       - name: Test
-        run: docker run --rm aspera-client idr0001 md5sum.txt /tmp/idr0001/
+        run: docker run --rm aspera-client idr0001-graml-sysgro/md5sum.txt /tmp/idr0001/
   upload:
     needs: build
     runs-on: ubuntu-latest
