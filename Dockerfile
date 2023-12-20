@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM --platform=linux/amd64 centos:centos7
 MAINTAINER ome-devel@lists.openmicroscopy.org.uk
 
 RUN useradd data
